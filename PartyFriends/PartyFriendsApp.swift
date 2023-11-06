@@ -1,5 +1,7 @@
 import SwiftUI
 
+//this string will be add because I am hant add my first commit for git/github
+
 @main
 struct PartyFriendsApp: App {
     var body: some Scene {
