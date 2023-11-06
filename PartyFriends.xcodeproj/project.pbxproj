@@ -16,6 +16,9 @@
 		1F62EFA42AF5934300E56ED6 /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62EFA32AF5934300E56ED6 /* TestView2.swift */; };
 		1F62EFA62AF5989400E56ED6 /* PersonSettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62EFA52AF5989400E56ED6 /* PersonSettingsContentView.swift */; };
 		1F73B1262AF829FA0057C407 /* TestScheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B1252AF829FA0057C407 /* TestScheet.swift */; };
+		1F73B1282AF965ED0057C407 /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B1272AF965ED0057C407 /* PartyModel.swift */; };
+		1F73B12A2AF969BF0057C407 /* GoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B1292AF969BF0057C407 /* GoodsModel.swift */; };
+		1F73B12C2AF96B570057C407 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B12B2AF96B570057C407 /* ReceiptModel.swift */; };
 		1FC2F92A2AF24F6000E14AAC /* PartyFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2F9292AF24F6000E14AAC /* PartyFriendsApp.swift */; };
 		1FC2F92E2AF24F6300E14AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2F92D2AF24F6300E14AAC /* Assets.xcassets */; };
 		1FC2F9312AF24F6300E14AAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2F9302AF24F6300E14AAC /* Preview Assets.xcassets */; };
@@ -31,6 +34,9 @@
 		1F62EFA32AF5934300E56ED6 /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
 		1F62EFA52AF5989400E56ED6 /* PersonSettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSettingsContentView.swift; sourceTree = "<group>"; };
 		1F73B1252AF829FA0057C407 /* TestScheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheet.swift; sourceTree = "<group>"; };
+		1F73B1272AF965ED0057C407 /* PartyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
+		1F73B1292AF969BF0057C407 /* GoodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsModel.swift; sourceTree = "<group>"; };
+		1F73B12B2AF96B570057C407 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
 		1FC2F9262AF24F6000E14AAC /* PartyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC2F9292AF24F6000E14AAC /* PartyFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyFriendsApp.swift; sourceTree = "<group>"; };
 		1FC2F92D2AF24F6300E14AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 				1F62EF9D2AF53A0500E56ED6 /* GoodsContentView.swift */,
 				1F62EF9F2AF53A1E00E56ED6 /* RedistributeContentView.swift */,
 				1F62EF972AF2B60800E56ED6 /* PersonModel.swift */,
+				1F73B1272AF965ED0057C407 /* PartyModel.swift */,
+				1F73B1292AF969BF0057C407 /* GoodsModel.swift */,
+				1F73B12B2AF96B570057C407 /* ReceiptModel.swift */,
 				1F62EFA12AF585BF00E56ED6 /* TestView.swift */,
 				1F73B1252AF829FA0057C407 /* TestScheet.swift */,
 				1F62EFA32AF5934300E56ED6 /* TestView2.swift */,
@@ -165,9 +174,12 @@
 				1F73B1262AF829FA0057C407 /* TestScheet.swift in Sources */,
 				1F62EF9A2AF5393F00E56ED6 /* PartyContentView.swift in Sources */,
 				1F62EF9C2AF5398800E56ED6 /* PersonContentView.swift in Sources */,
+				1F73B1282AF965ED0057C407 /* PartyModel.swift in Sources */,
 				1F62EFA02AF53A1E00E56ED6 /* RedistributeContentView.swift in Sources */,
 				1F62EF9E2AF53A0500E56ED6 /* GoodsContentView.swift in Sources */,
+				1F73B12C2AF96B570057C407 /* ReceiptModel.swift in Sources */,
 				1F62EFA62AF5989400E56ED6 /* PersonSettingsContentView.swift in Sources */,
+				1F73B12A2AF969BF0057C407 /* GoodsModel.swift in Sources */,
 				1F62EF982AF2B60800E56ED6 /* PersonModel.swift in Sources */,
 				1FC2F92A2AF24F6000E14AAC /* PartyFriendsApp.swift in Sources */,
 				1F62EFA42AF5934300E56ED6 /* TestView2.swift in Sources */,
