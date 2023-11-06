@@ -23,6 +23,12 @@ struct AddPersonView: View {
                 
             }
             .navigationTitle("Add new Person")
+            .toolbar {
+                Button("Save") {
+                    let newPerson = PersonModel(name: name, surName: surName, financialCondition: financialCondition)
+                    personList.personArray.append(newPerson)
+                }
+            }
         }
     }
 }
