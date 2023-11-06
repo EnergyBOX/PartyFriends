@@ -5,6 +5,8 @@ struct PersonContentView: View {
     // this thing dets informaion from a class that cotains a list of persons
     @ObservedObject var personList: PersonList = PersonList()
     
+    @State private var showingAddPersonViev = false
+    
     var body: some View {
         List {
             ForEach(personList.personArray) { person in
@@ -30,15 +32,14 @@ struct PersonContentView: View {
         .navigationTitle("Person List")
         .navigationBarItems(
             leading: EditButton(),
-            trailing: addPersonButton
+            trailing: Button(action: {
+                showingAddPersonViev = true
+            }, label: {
+                Image(systemName: "plus")
+            })
         )
-    }
-    
-    var addPersonButton: some View {
-        Button {
-            personList.addPerson()
-        } label: {
-            Image(systemName: "plus")
+        .sheet(isPresented: $showingAddPersonViev) {
+            AddPersonView(personList: personList) // dont andestent this moment #1
         }
     }
 }

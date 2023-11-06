@@ -13,11 +13,12 @@ class PersonList: ObservableObject {
     
     @Published var personArray: [PersonModel] = []
     
-    func addPerson() {
-        // Implement the logic to add a new person
-        personArray.append(PersonModel(name: "Name", surName: "Surname", financialCondition: 0.0))
-        print("// Implement the logic to add a new person")
-    }
+// may be this function not need more in this commit ??? 
+//    func addPerson() {
+//        // Implement the logic to add a new person
+//        personArray.append(PersonModel(name: "Name", surName: "Surname", financialCondition: 0.0))
+//        print("// Implement the logic to add a new person")
+//    }
     
     func movePerson(from source: IndexSet, to destination: Int) {
         // Implement the logic to move a person
