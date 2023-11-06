@@ -1,6 +1,8 @@
 import SwiftUI
 
-//this string will be add because I am hant add my first commit for git/github
+//this string will (some did be delete) commit for git/github
+// AND if Iam add one more changes an delete previous strig its to be in next commit )))
+
 
 @main
 struct PartyFriendsApp: App {
