@@ -3,7 +3,7 @@ import SwiftUI
 struct PersonContentView: View {
     
     // this thing dets informaion from a class that cotains a list of persons
-    @ObservedObject var personList: PersonList = PersonList()
+    @ObservedObject var personList = PersonList()
     
     @State private var showingAddPersonViev = false
     
@@ -13,17 +13,15 @@ struct PersonContentView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("\(person.name) \(person.surName)")
-                        Text("\(person.id)")
-                            .foregroundColor(.gray)
-                            .font(.caption2)
+                        Text("\(person.id)")            // for debugging
+                            .foregroundColor(.gray)     // for debugging
+                            .font(.caption2)            // for debugging
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
                         Text("\(person.financialCondition)")
                     }
                 }
-                
-                
             }
             .onMove(perform: personList.movePerson)
             .onDelete(perform: personList.deletePerson)
