@@ -75,22 +75,11 @@
 		1FC2F9282AF24F6000E14AAC /* PartyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				1FC2F9292AF24F6000E14AAC /* PartyFriendsApp.swift */,
-				1F62EF992AF5393F00E56ED6 /* PartyContentView.swift */,
-				1F62EF9B2AF5398800E56ED6 /* PersonContentView.swift */,
-				1F73B12D2AF977CA0057C407 /* AddPersonView.swift */,
-				1F62EFA52AF5989400E56ED6 /* PersonSettingsContentView.swift */,
-				1F62EF9D2AF53A0500E56ED6 /* GoodsContentView.swift */,
-				1F62EF9F2AF53A1E00E56ED6 /* RedistributeContentView.swift */,
-				1F62EF972AF2B60800E56ED6 /* PersonModel.swift */,
-				1F73B1272AF965ED0057C407 /* PartyModel.swift */,
-				1F73B1292AF969BF0057C407 /* GoodsModel.swift */,
-				1F73B12B2AF96B570057C407 /* ReceiptModel.swift */,
-				1F62EFA12AF585BF00E56ED6 /* TestView.swift */,
-				1F73B1252AF829FA0057C407 /* TestScheet.swift */,
-				1F62EFA32AF5934300E56ED6 /* TestView2.swift */,
+				1FDEDD572AFAADC000FD6408 /* View Models */,
+				1FDEDD562AFAADB800FD6408 /* Object Models */,
 				1FC2F92D2AF24F6300E14AAC /* Assets.xcassets */,
 				1FC2F92F2AF24F6300E14AAC /* Preview Content */,
+				1FDEDD582AFAAE6200FD6408 /* Just like Bin */,
 			);
 			path = PartyFriends;
 			sourceTree = "<group>";
@@ -101,6 +90,41 @@
 				1FC2F9302AF24F6300E14AAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FDEDD562AFAADB800FD6408 /* Object Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F73B1272AF965ED0057C407 /* PartyModel.swift */,
+				1F62EF972AF2B60800E56ED6 /* PersonModel.swift */,
+				1F73B1292AF969BF0057C407 /* GoodsModel.swift */,
+				1F73B12B2AF96B570057C407 /* ReceiptModel.swift */,
+			);
+			path = "Object Models";
+			sourceTree = "<group>";
+		};
+		1FDEDD572AFAADC000FD6408 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2F9292AF24F6000E14AAC /* PartyFriendsApp.swift */,
+				1F62EF992AF5393F00E56ED6 /* PartyContentView.swift */,
+				1F62EF9B2AF5398800E56ED6 /* PersonContentView.swift */,
+				1F73B12D2AF977CA0057C407 /* AddPersonView.swift */,
+				1F62EF9D2AF53A0500E56ED6 /* GoodsContentView.swift */,
+				1F62EF9F2AF53A1E00E56ED6 /* RedistributeContentView.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		1FDEDD582AFAAE6200FD6408 /* Just like Bin */ = {
+			isa = PBXGroup;
+			children = (
+				1F62EFA32AF5934300E56ED6 /* TestView2.swift */,
+				1F73B1252AF829FA0057C407 /* TestScheet.swift */,
+				1F62EFA12AF585BF00E56ED6 /* TestView.swift */,
+				1F62EFA52AF5989400E56ED6 /* PersonSettingsContentView.swift */,
+			);
+			path = "Just like Bin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,9 +1,5 @@
 import SwiftUI
 
-//this string will (some did be delete) commit for git/github
-// AND if Iam add one more changes an delete previous strig its to be in next commit )))
-
-
 @main
 struct PartyFriendsApp: App {
     var body: some Scene {
@@ -36,14 +32,6 @@ struct PartyFriendsApp: App {
                 .tabItem {
                     Image(systemName: "arrow.right.arrow.left.square.fill")
                     Text("Redistribute")
-                }
-                //for test only
-                NavigationView {
-                    Scheet()
-                }
-                .tabItem {
-                    Image(systemName: "pencil.and.outline")
-                    Text("Scheet")
                 }
             }
             

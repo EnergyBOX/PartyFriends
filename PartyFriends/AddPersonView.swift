@@ -1,10 +1,3 @@
-//
-//  AddPersonView.swift
-//  PartyFriends
-//
-//  Created by Server Admin on 06.11.2023.
-//
-
 import SwiftUI
 
 struct AddPersonView: View {
