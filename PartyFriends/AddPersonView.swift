@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AddPersonView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     @State private var name: String = ""
     @State private var surName: String = ""
     @State private var financialCondition: Double = 0.0
@@ -24,9 +26,17 @@ struct AddPersonView: View {
             }
             .navigationTitle("Add new Person")
             .toolbar {
-                Button("Save") {
-                    let newPerson = PersonModel(name: name, surName: surName, financialCondition: financialCondition)
-                    personList.personArray.append(newPerson)
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Save") {
+                        let newPerson = PersonModel(name: name, surName: surName, financialCondition: financialCondition)
+                        personList.personArray.append(newPerson)
+                        dismiss()
+                    }
                 }
             }
         }
