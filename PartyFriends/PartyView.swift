@@ -7,14 +7,18 @@
 
 import SwiftUI
 
+
 struct PartyView: View {
+    
+    let partyName: String
+    
     var body: some View {
-        Text("One link of Partylist")
+        Text("\(partyName)One link of Partylist")
     }
 }
 
 struct Party_Previews: PreviewProvider {
     static var previews: some View {
-        PartyView()
+        PartyView(partyName: "What must be hear ??")
     }
 }

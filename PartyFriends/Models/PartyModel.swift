@@ -12,14 +12,15 @@ class PartyClass: Identifiable {
     }
 }
 
-class PartiesClass: ObservableObject {
-    var items = [PartyClass]()
+class PartiesClass: Identifiable, ObservableObject {
+    var id = UUID()
+    @Published var items = [PartyClass]()
     
     func addItem() {
         let newParty = PartyClass(partyName: "New Party")
         items.append(newParty)
-        print(items)//test
     }
+    
     func moveItem(from source: IndexSet, to destination: Int) {
         items.move(fromOffsets: source, toOffset: destination)
     }

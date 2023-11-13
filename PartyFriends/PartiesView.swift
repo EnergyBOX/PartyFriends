@@ -9,15 +9,16 @@ import SwiftUI
 
 struct PartiesView: View {
     
-    @ObservedObject var parties = PartiesClass()
+    @EnvironmentObject var parties: PartiesClass
+//    @ObservedObject var parties = PartiesClass()
     
     var body: some View {
         List {
-            ForEach(parties.items) { party in
+            ForEach(parties.items) { item in
                 NavigationLink {
-                    PartySetView()
+                    PartySetView(partyName: item.partyName)
                 } label: {
-                    PartyView()
+                    PartyView(partyName: item.partyName)
                 }
             }
             .onMove(perform: parties.moveItem)

@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct PartySetView: View {
+    
+    @State var partyName: String //??
+
     var body: some View {
-        Text("Party set up inside")
+        VStack {
+            TextField("Name", text: $partyName)
+                .padding(.horizontal)
+                .frame(height: 55)
+                .background(Color(.gray))
+                .cornerRadius(10)
+            Button(action: saveButton) {
+                Text("Save")
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.accentColor)
+                    .cornerRadius(10)
+            }
+        }
+        .padding()
     }
 }
 
+func saveButton() {
+    //Sace function
+}
+
+
 struct PartySet_Previews: PreviewProvider {
     static var previews: some View {
-        PartySetView()
+        PartySetView(partyName: "???") // no no no
     }
 }
