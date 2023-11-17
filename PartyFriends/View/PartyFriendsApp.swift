@@ -1,0 +1,14 @@
+import SwiftUI
+
+@main // ????????????????????????????????
+struct PartyFriendsApp: App {
+    
+    //@StateObject var parties: PartiesClass = PartiesClass()
+    
+    var body: some Scene {
+        WindowGroup {
+            MainToolbarView()
+      //          .environmentObject(parties)
+        }
+    }
+}
