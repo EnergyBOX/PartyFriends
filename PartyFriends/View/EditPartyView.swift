@@ -1,5 +1,7 @@
 import SwiftUI
 
+// this file is sufficiently developed
+
 struct EditPartyView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: PartyViewModel

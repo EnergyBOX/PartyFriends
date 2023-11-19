@@ -1,5 +1,7 @@
 import Foundation
 
+// this file is sufficiently developed
+
 class Party: Identifiable, Codable {
     var id: UUID
     var name: String

@@ -1,7 +1,24 @@
 import SwiftUI
 
+// this file is sufficiently developed
+
 class PartyViewModel: ObservableObject {
-    @Published var parties: [Party] = []
+    @Published var parties: [Party] = [] {
+        didSet {
+            saveParty()
+        }
+    }
+    
+    let partiesKey: String = "parties_list"
+    
+    func getParty() {
+        guard
+            let data = UserDefaults.standard.data(forKey: partiesKey),
+            let savedParty = try? JSONDecoder().decode([Party].self, from: data)
+        else { return }
+        
+        self.parties = savedParty
+    }
     
     func addParty(_ addParty: Party) {
         let newParty = Party(name: addParty.name, people: addParty.people)
@@ -20,5 +37,11 @@ class PartyViewModel: ObservableObject {
     
     func deleteParty(index: IndexSet) {
         parties.remove(atOffsets: index)
+    }
+    
+    func saveParty() {
+        if let encodedData = try? JSONEncoder().encode(parties) {
+            UserDefaults.standard.set(encodedData, forKey: partiesKey)
+        }
     }
 }

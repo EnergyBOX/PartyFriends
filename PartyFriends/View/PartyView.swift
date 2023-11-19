@@ -1,5 +1,7 @@
 import SwiftUI
 
+// this file is sufficiently developed
+
 struct PartyView: View {
     @ObservedObject var viewModel = PartyViewModel()
     
@@ -15,7 +17,7 @@ struct PartyView: View {
                             .foregroundColor(.gray)     // for debugging
                             .font(.caption2)            // for debugging
                     }
-                    
+
                 }
             }
             .onMove(perform: viewModel.moveParty)
@@ -29,7 +31,7 @@ struct PartyView: View {
             } label: {
                 Image(systemName: "plus")
             }
-            
+                
         )
     }
 }
