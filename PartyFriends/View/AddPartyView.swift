@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct EditPartyView: View {
+struct AddPartyView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: PartyViewModel
-    @State var party: Party
+    @State var partyName: String = ""
     
     var body: some View {
         Form {
             Section {
-                TextField("Party name", text: $party.name)
+                TextField("Party name", text: $partyName)
             }
-            .navigationTitle("Edit Party")
+            .navigationTitle("Create New Party")
             .navigationBarItems(trailing: Button (action: {
-                viewModel.updateParty(party)
+                viewModel.addParty(name: partyName)
                 presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Save")
@@ -21,8 +21,8 @@ struct EditPartyView: View {
     }
 }
 
-struct EditPartyView_Previews: PreviewProvider {
+struct AddPartyView_Previews: PreviewProvider {
     static var previews: some View {
-        EditPartyView(viewModel: PartyViewModel(), party: Party(name: "", people: [])) //its mistake???
+        AddPartyView(viewModel: PartyViewModel())
     }
 }

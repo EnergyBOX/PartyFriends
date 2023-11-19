@@ -31,6 +31,13 @@ struct MainToolbarView: View {
                 Image(systemName: "arrow.right.arrow.left.square.fill")
                 Text("Redistribute")
             }
+//            NavigationView {
+//                tesT()
+//            }
+//            .tabItem {
+//                Image(systemName: "testtube.2")
+//                Text("tesT")
+//            }
         }
     }
 }

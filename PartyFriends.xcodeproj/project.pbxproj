@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F38FE652B08041E004B7C41 /* for test File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38FE642B08041E004B7C41 /* for test File.swift */; };
 		1F62EF982AF2B60800E56ED6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62EF972AF2B60800E56ED6 /* Person.swift */; };
 		1F73B1282AF965ED0057C407 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B1272AF965ED0057C407 /* Party.swift */; };
 		1F73B12A2AF969BF0057C407 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B1292AF969BF0057C407 /* ProductCategory.swift */; };
@@ -24,9 +25,11 @@
 		1FCDDD4C2B0547A3006704BB /* ProductCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDDD4B2B0547A3006704BB /* ProductCategoryView.swift */; };
 		1FCDDD4E2B0547B8006704BB /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDDD4D2B0547B8006704BB /* PersonView.swift */; };
 		1FCDDD502B0549DC006704BB /* EditPartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDDD4F2B0549DC006704BB /* EditPartyView.swift */; };
+		1FF6C4832B092F4B00F28829 /* AddPartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6C4822B092F4A00F28829 /* AddPartyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F38FE642B08041E004B7C41 /* for test File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "for test File.swift"; sourceTree = "<group>"; };
 		1F62EF972AF2B60800E56ED6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1F73B1272AF965ED0057C407 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		1F73B1292AF969BF0057C407 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		1FCDDD4B2B0547A3006704BB /* ProductCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryView.swift; sourceTree = "<group>"; };
 		1FCDDD4D2B0547B8006704BB /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		1FCDDD4F2B0549DC006704BB /* EditPartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPartyView.swift; sourceTree = "<group>"; };
+		1FF6C4822B092F4A00F28829 /* AddPartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPartyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				1FC2F9292AF24F6000E14AAC /* PartyFriendsApp.swift */,
 				1FC15A512B0159E7002077C8 /* MainToolbarView.swift */,
 				1FCDDD472B0545F2006704BB /* PartyView.swift */,
+				1FF6C4822B092F4A00F28829 /* AddPartyView.swift */,
 				1FCDDD4F2B0549DC006704BB /* EditPartyView.swift */,
 				1FCDDD4D2B0547B8006704BB /* PersonView.swift */,
 				1FCDDD4B2B0547A3006704BB /* ProductCategoryView.swift */,
@@ -107,6 +112,7 @@
 				1FDEDD562AFAADB800FD6408 /* Model */,
 				1FC2F92D2AF24F6300E14AAC /* Assets.xcassets */,
 				1FC2F92F2AF24F6300E14AAC /* Preview Content */,
+				1F38FE642B08041E004B7C41 /* for test File.swift */,
 			);
 			path = PartyFriends;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				1FCDDD4A2B05478E006704BB /* PurchaseView.swift in Sources */,
 				1FC15A522B0159E7002077C8 /* MainToolbarView.swift in Sources */,
 				1FCDDD4C2B0547A3006704BB /* ProductCategoryView.swift in Sources */,
+				1F38FE652B08041E004B7C41 /* for test File.swift in Sources */,
 				1F73B1282AF965ED0057C407 /* Party.swift in Sources */,
 				1F7765BE2B041DB10052A8F8 /* PurchaseViewModel.swift in Sources */,
 				1F7765BA2B0415530052A8F8 /* PersonViewModel.swift in Sources */,
@@ -214,6 +221,7 @@
 				1F7765BC2B041BDC0052A8F8 /* ProductCategoryViewModel.swift in Sources */,
 				1F62EF982AF2B60800E56ED6 /* Person.swift in Sources */,
 				1FC2F92A2AF24F6000E14AAC /* PartyFriendsApp.swift in Sources */,
+				1FF6C4832B092F4B00F28829 /* AddPartyView.swift in Sources */,
 				1FCDDD502B0549DC006704BB /* EditPartyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

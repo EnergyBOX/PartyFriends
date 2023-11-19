@@ -1,6 +1,6 @@
 import Foundation
 
-class ProductCategory: Identifiable {
+class ProductCategory: Identifiable, Codable {
     var id = UUID()
     var name: String
     

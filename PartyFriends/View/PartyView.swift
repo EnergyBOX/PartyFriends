@@ -2,50 +2,34 @@ import SwiftUI
 
 struct PartyView: View {
     @ObservedObject var viewModel = PartyViewModel()
-
+    
     var body: some View {
         List {
             ForEach (viewModel.parties) { party in
                 NavigationLink {
-                    EditPartyView(party: party, viewModel: viewModel)
+                    EditPartyView(viewModel: viewModel, party: party)
                 } label: {
-                    Text(party.name)
+                    VStack {
+                        Text(party.name)
+                        Text("\(party.id)")
+                            .foregroundColor(.gray)     // for debugging
+                            .font(.caption2)            // for debugging
+                    }
+
                 }
             }
             .onMove(perform: viewModel.moveParty)
             .onDelete(perform: viewModel.deleteParty)
-
         }
-        
         .navigationTitle("Party List")
         .navigationBarItems(
             leading: EditButton(),
-            trailing: Text("plug")
+            trailing: NavigationLink {
+                AddPartyView(viewModel: viewModel)
+            } label: {
+                Image(systemName: "plus")
+            }
                 
-                
-                
-                
-                
-//            do{
-//                let par = viewModel.addParty()
-//                NavigationLink(destination: {
-//                    EditPartyView(party: par, viewModel: viewModel)
-//                }, label: {
-//                    Text("1")
-//                })
-//            }
-                
-                
-                
-//                NavigationLink(destination: {
-//                    EditPartyView(party: viewModel.addParty(), viewModel: viewModel)
-//                }, label: {
-//                    Text("1")
-//                })
-            
-            
-            
-            
         )
     }
 }

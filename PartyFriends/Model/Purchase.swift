@@ -1,6 +1,6 @@
 import Foundation
 
-class Purchase: Identifiable {
+class Purchase: Identifiable, Codable {
     var id = UUID()
     var cost: Double
     var productCategory: ProductCategory?
