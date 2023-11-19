@@ -11,6 +11,10 @@ class PartyViewModel: ObservableObject {
     
     let partiesKey: String = "parties_list"
     
+    init() {
+        getParty()
+    }
+    
     func getParty() {
         guard
             let data = UserDefaults.standard.data(forKey: partiesKey),
