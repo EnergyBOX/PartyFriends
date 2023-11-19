@@ -12,7 +12,7 @@ struct EditPartyView: View {
             }
             .navigationTitle("Edit Party")
             .navigationBarItems(trailing: Button (action: {
-                viewModel.updateParty(party)
+                viewModel.editParty(party)
                 presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Save")

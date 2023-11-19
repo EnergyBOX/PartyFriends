@@ -11,11 +11,11 @@ struct PartyView: View {
                 } label: {
                     VStack {
                         Text(party.name)
-                        Text("\(party.id)")
+                        Text("\(party.id)")             // for debugging
                             .foregroundColor(.gray)     // for debugging
                             .font(.caption2)            // for debugging
                     }
-
+                    
                 }
             }
             .onMove(perform: viewModel.moveParty)
@@ -29,7 +29,7 @@ struct PartyView: View {
             } label: {
                 Image(systemName: "plus")
             }
-                
+            
         )
     }
 }
