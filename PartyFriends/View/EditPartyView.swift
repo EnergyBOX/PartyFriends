@@ -25,6 +25,6 @@ struct EditPartyView: View {
 
 struct EditPartyView_Previews: PreviewProvider {
     static var previews: some View {
-        EditPartyView(viewModel: PartyViewModel(), party: Party(name: "", people: [])) //its mistake???
+        EditPartyView(viewModel: PartyViewModel(), party: Party(name: "", people: [])) //its mistake??? yes you can move inet to model !!
     }
 }

@@ -5,7 +5,7 @@ import SwiftUI
 struct AddPartyView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: PartyViewModel
-    @State var party: Party = Party(name: "", people: [])
+    @State var party: Party = Party(name: "New?", people: []) // can it init in Model section !!
 
     var body: some View {
         Form {

@@ -4,7 +4,7 @@ struct MainToolbarView: View {
     var body: some View {
         TabView {
             NavigationView {
-                PartyView()
+                PartyView(viewModel: PartyViewModel())
             }
             .tabItem {
                 Image(systemName: "party.popper.fill")

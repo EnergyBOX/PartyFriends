@@ -3,7 +3,8 @@ import SwiftUI
 // this file is sufficiently developed
 
 struct PartyView: View {
-    @ObservedObject var viewModel = PartyViewModel()
+    @ObservedObject var viewModel: PartyViewModel
+
     
     var body: some View {
         List {
@@ -38,6 +39,6 @@ struct PartyView: View {
 
 struct PartyView_Previews: PreviewProvider {
     static var previews: some View {
-        PartyView()
+        PartyView(viewModel: PartyViewModel())
     }
 }
